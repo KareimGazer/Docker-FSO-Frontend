@@ -6,6 +6,6 @@ ENV VITE_BACKEND_URL="http://localhost:3000/"
 
 COPY . .
 
-RUN npm ci
+RUN npm install
 
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "dev", "--", "--host"]
